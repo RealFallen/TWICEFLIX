@@ -5,11 +5,39 @@ body{
 }
 
 .twiceflix-logo{
-    width: 150px;
-    
+    width: 140px;
+    height: auto;
     transition: transform 0.2s;
 }
 
 .twiceflix-logo:hover{
     transform: scale(1.04);
+}
+
+.title{
+    font-size: 40px;
+    text-align: center;
+} 
+
+.profiles img{
+    width: 120px;
+    height: auto;
+    border-radius: 4%;
+    transition: transform 0.2s;
+}
+
+.profiles img:hover{
+    transform: scale(1.04);
+}
+
+
+.profiles{
+   display: flex;
+   flex-direction: row;
+}
+
+
+
+.footer{
+    text-align: center;
 }
