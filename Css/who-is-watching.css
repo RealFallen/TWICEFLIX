@@ -1,0 +1,15 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.twiceflix-logo{
+    width: 150px;
+    
+    transition: transform 0.2s;
+}
+
+.twiceflix-logo:hover{
+    transform: scale(1.04);
+}
