@@ -1,0 +1,36 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    display: flex;
+}
+
+.logo img{
+    width: 140px;
+    height: auto;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: transform 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.nav-links li a:hover{
+    color: #ff1c0b;
+    transform: scale(1.04);
+}
