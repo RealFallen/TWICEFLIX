@@ -5,7 +5,7 @@ body {
 }
 
 .twiceflix-logo {
-    width: 140px;
+    width: 160px;
     height: auto;
     margin-top: 18px;
     margin-left: 18px;
@@ -23,8 +23,7 @@ body {
 }
 
 .profiles img{
-    width: 140px;
-    width: 120px;
+    width: 160px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s;
@@ -45,5 +44,4 @@ body {
 
 .footer {
     text-align: center;
-    color: #ffffff8e;
 }

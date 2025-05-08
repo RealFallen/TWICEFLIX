@@ -1,15 +1,15 @@
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-color: black;
     color: white;
     overflow-x: hidden;
 }
 
-.header{
+.header {
     display: flex;
 }
 
-.logo img{
+.logo img {
     width: 140px;
     height: auto;
     margin-top: 18px;
@@ -17,58 +17,58 @@ body{
     transition: transform 0.2s;
 }
 
-.logo img:hover{
+.logo img:hover {
     transform: scale(1.04);
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     gap: 14px;
     margin-top: 18px;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     transition: transform 0.2s, color 0.2s;
     display: inline-block;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: #ff1c0b;
     transform: scale(1.04);
 }
 
-#top-video{
+#top-video {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
     display: block;
 }
 
-.video-gradient{
+.video-gradient {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 600px;
     z-index: 2;
     background: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 
-.video-container{
+.video-container {
     position: relative;
 }
 
-.buttons{
+.buttons {
     position: absolute;
     display: flex;
     z-index: 3;
 }
 
-.buttons #play-button{
+.buttons #play-button {
     all: unset;
     display: flex;
     align-items: center;
@@ -79,20 +79,20 @@ body{
     height: 38px;
     color: #000000;
     background-color: #ffffffe0;
-    box-shadow:  0 4px 12px #00000044;
+    box-shadow: 0 4px 12px #00000044;
     font-size: 18px;
     font-weight: 500;
-    margin-top: -80px;
+    margin-top: -280px;
     margin-left: 42px;
     cursor: pointer;
     transition: color 0.2s;
 }
 
-.buttons #play-button:hover{
+.buttons #play-button:hover {
     background-color: #ffffffa8;
 }
 
-.buttons #more-information{
+.buttons #more-information {
     all: unset;
     display: flex;
     align-items: center;
@@ -103,52 +103,52 @@ body{
     height: 38px;
     color: #ffffff;
     background-color: #585858cb;
-    box-shadow:  0 4px 12px #00000044;
+    box-shadow: 0 4px 12px #00000044;
     font-size: 18px;
     font-weight: 500;
-    margin-top: -80px;
+    margin-top: -280px;
     margin-left: 12px;
     cursor: pointer;
     transition: color 0.2s;
 }
 
-.buttons #more-information:hover{
+.buttons #more-information:hover {
     background-color: #5858589c;
 }
 
-.buttons #play-icon{
+.buttons #play-icon {
     width: 20px;
     height: auto;
 }
 
-.buttons #more-info-icon{
+.buttons #more-info-icon {
     width: 20px;
     height: auto;
 }
 
-#netflix-series-logo{
-   width: 80px; 
-   height: auto;
-   position: relative;
-   display: flex;
-   align-items: center;
-   z-index: 3;
-   top: -320px;
-   left: 44px;
-}
-
-#strategy-logo{
-    width: 300px; 
+#netflix-series-logo {
+    width: 100px;
     height: auto;
     position: relative;
     display: flex;
     align-items: center;
     z-index: 3;
-    top: -300px;
+    top: -560px;
     left: 44px;
 }
 
-.more-info{
+#strategy-logo {
+    width: 480px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    top: -540px;
+    left: 44px;
+}
+
+.more-info {
     position: relative;
     display: flex;
     align-items: center;
@@ -156,354 +156,554 @@ body{
     left: 44px;
     font-size: 14px;
     gap: 12px;
-    top: -420px;
+    top: -660px;
     color: #e9e8e8;
     font-weight: 200;
     text-shadow: 0 4px 12px #00000044;
 }
 
-#strategy-description{
-    width: 400px; 
+#strategy-description {
+    width: 400px;
     height: auto;
     position: relative;
     display: flex;
     align-items: center;
     z-index: 3;
-    top: -280px;
+    top: -520px;
     left: 44px;
     font-size: 18px;
     text-shadow: 0 4px 12px #00000044;
 }
 
-#home-section{
+#home-section {
     position: absolute;
     top: 460px;
-    visibility: hidden;
+    z-index: 3;
 }
 
-.new-music-title{
+.new-music-title {
     gap: 20px;
     margin-left: 20px;
     font-size: 18px;
 }
 
-.new-music{
+.new-music {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 20px;
 }
 
-.new-music img{
+.new-music img {
     width: 160px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s;
 }
 
-.new-music img:hover{
+.new-music img:hover {
     transform: scale(1.04);
 }
 
-#updated-section{
+#updated-section {
     position: absolute;
     top: inherit;
 }
 
-.updated-title{
+.updated-title {
     gap: 20px;
     margin-left: 20px;
     font-size: 18px;
 }
 
-.updated{
+.updated {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 20px;
 }
 
-.updated img{
+.updated img {
     width: 160px;
     height: 220px;
     border-radius: 8px;
     transition: transform 0.2s;
 }
 
-.updated img:hover{
+.updated img:hover {
     transform: scale(1.04);
 }
 
-#music-section{
+#music-section {
     position: absolute;
     top: inherit;
 }
 
-.music-title{
+.music-title {
     gap: 20px;
     margin-left: 20px;
     font-size: 18px;
 }
 
-.music{
+.music {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 20px;
 }
 
-.music img{
+.music img {
     width: 160px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s;
 }
 
-.music img:hover{
+.music img:hover {
     transform: scale(1.04);
 }
 
-#discography-section{
+#discography-section {
+    position: absolute;
+    top: 440px;
+    z-index: 3;
+        visibility: hidden;
+}
+
+.full-albums-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.full-albums-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.full-albums-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.full-albums-korean img:hover {
+    transform: scale(1.04);
+}
+
+.full-albums-japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.full-albums-japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.full-albums-japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.full-albums-japanese img:hover {
+    transform: scale(1.04);
+}
+
+.mini-albums-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.mini-albums-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.mini-albums-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.mini-albums-korean img:hover {
+    transform: scale(1.04);
+}
+
+.mini-albums-japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.mini-albums-japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.mini-albums-japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.mini-albums-japanese img:hover {
+    transform: scale(1.04);
+}
+
+.compilation-albums-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.compilation-albums-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.compilation-albums-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.compilation-albums-korean img:hover {
+    transform: scale(1.04);
+}
+
+.compilation-albums-japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.compilation-albums-japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.compilation-albums-japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.compilation-albums-japanese img:hover {
+    transform: scale(1.04);
+}
+
+.special-albums-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.special-albums-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.special-albums-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.special-albums-korean img:hover {
+    transform: scale(1.04);
+}
+
+.special-albums-japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.special-albums-japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.special-albums-japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.special-albums-japanese img:hover {
+    transform: scale(1.04);
+}
+
+.singles-japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.singles-japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.singles-japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.singles-japanese img:hover {
+    transform: scale(1.04);
+}
+
+.digital-singles-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.digital-singles-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.digital-singles-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.digital-singles-korean img:hover {
+    transform: scale(1.04);
+}
+
+.english-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.english {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.english img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.english img:hover {
+    transform: scale(1.04);
+}
+
+.japanese-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.japanese {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.japanese img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.japanese img:hover {
+    transform: scale(1.04);
+}
+
+.remix-singles-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.remix-singles-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.remix-singles-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.remix-singles-korean img:hover {
+    transform: scale(1.04);
+}
+
+.remix-singles-english-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.remix-singles-english {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.remix-singles-english img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.remix-singles-english img:hover {
+    transform: scale(1.04);
+}
+
+.remix-albums-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.remix-albums-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.remix-albums-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.remix-albums-korean img:hover {
+    transform: scale(1.04);
+}
+
+.remix-albums-english-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.remix-albums-english {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.remix-albums-english img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.remix-albums-english img:hover {
+    transform: scale(1.04);
+}
+
+.collaborations-korean-title {
+    gap: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.collaborations-korean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.collaborations-korean img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.collaborations img:hover {
+    transform: scale(1.04);
+}
+
+#fan-cams-section {
     position: absolute;
     top: 460px;
+    visibility: hidden;
 }
 
-.full-albums-korean-title{
+.fan-cams-title {
     gap: 20px;
     margin-left: 20px;
     font-size: 18px;
 }
 
-.full-albums-korean{
+.fan-cams {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 20px;
 }
 
-.full-albums-korean img{
+.fan-cams img {
     width: 160px;
-    height: auto;
+    height: 220px;
     border-radius: 8px;
     transition: transform 0.2s;
 }
 
-.full-albums-korean img:hover{
-    transform: scale(1.04);
-}
-
-.full-albums-japanese-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.full-albums-japanese{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.full-albums-japanese img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.full-albums-japanese img:hover{
-    transform: scale(1.04);
-}
-
-.mini-albums-korean-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.mini-albums-korean{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.mini-albums-korean img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.mini-albums-korean img:hover{
-    transform: scale(1.04);
-}
-
-.mini-albums-japanese-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.mini-albums-japanese{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.mini-albums-japanese img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.mini-albums-japanese img:hover{
-    transform: scale(1.04);
-}
-
-.compilation-albums-korean-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.compilation-albums-korean{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.compilation-albums-korean img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.compilation-albums-korean img:hover{
-    transform: scale(1.04);
-}
-
-.compilation-albums-japanese-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.compilation-albums-japanese{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.compilation-albums-japanese img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.compilation-albums-japanese img:hover{
-    transform: scale(1.04);
-}
-
-.special-albums-korean-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.special-albums-korean{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.special-albums-korean img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.special-albums-korean img:hover{
-    transform: scale(1.04);
-}
-
-.special-albums-japanese-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.special-albums-japanese{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.special-albums-japanese img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.special-albums-japanese img:hover{
-    transform: scale(1.04);
-}
-
-.singles-japanese-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.singles-japanese{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.singles-japanese img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.singles-japanese img:hover{
-    transform: scale(1.04);
-}
-
-.digital-singles-korean-title{
-    gap: 20px;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.digital-singles-korean{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.digital-singles-korean img{
-    width: 160px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-}
-
-.digital-singles-korean img:hover{
+.fan-cams img:hover {
     transform: scale(1.04);
 }
